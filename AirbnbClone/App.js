@@ -7,6 +7,8 @@
  */
 
 import React from 'react';
+
+
 import {
   SafeAreaView,
   StyleSheet,
@@ -24,6 +26,9 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Entype from 'react-native-vector-icons/Entypo';
+
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -40,7 +45,10 @@ const App: () => React$Node = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
+              <Text style={styles.sectionTitle}>
+                Step One
+              <Entype name={'home'} size={24}/> 
+              </Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> to change this
                 screen and then come back to see your edits.
